@@ -20,38 +20,227 @@
         position: absolute;
         //bottom: 0;
         display: flex;
-		flex-direction:column;
-        self-align:start ;
-		right:0;
+        flex-direction: column;
+        self-align: start;
+        right: 0;
       }
+      #alfa {
+        float: right;
+        width: 13%;
+        height: 13%;
+      }
+      #iset {
+        float: left;
+        width: 13%;
+        height: 13%;
+      }
+      #intro {
+        width: 40%;
+        height: 40%;
+      }
+      #realisation {
+        width: 30%;
+        height: 30%;
+      }
+      #revolution {
+        width: 30%;
+        height: 30%;
+        float: left;
+      }
+      #IA {
+        width: 30%;
+        height: 30%;
+        float: center;
+      }
+      #therapie {
+        width: 30%;
+        height: 30%;
+        float: right;
+      }
+      #accuracy {
+        width: 50%;
+        height: 50%;
+        float: left;
+      }
+      #loss {
+        width: 50%;
+        height: 50%;
+        float: left;
+      }
+
+      #coupe {
+        width: 30%;
+        height: 30%;
+        float: bottom;
+      }
+
+      #bot {
+        width: 30%;
+        height: 30%;
+      }
+      #titre_conc {
+        color: #00ffff;
+        text-indent: 30px;
+      }
+	  #tete{
+        width: 40%;
+        height: 40%;
+        float: right;
+      }
+	  #fin{
+	  margin-top: 20%;
+		float:left;
+      }
+
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Slide 1 Machine Learning-->
+        <!-- Slide 1 -->
         <section>
-          <h3>Apprentissage en profondeur</h3>
-          <p>
-            L'apprentissage profond est un type d'intelligence artificielle
-            dérivé du l'apprentissage automatique où la machine est capable
-            d'apprendre par elle-même.
-          </p>
-		     <h1 class="page">1</h1>
+          <img src="images/alfa.png" id="alfa" />
+          <img src="images/iset.jpg" id="iset" />
+          <div>
+            Mémoire de fin d’études en vue de l’obtention du diplôme National de
+            Licence Appliquée en Technologies de l’Informatique (TI)
+          </div>
+          <p>Réalisation d’un agent conversationnel de soutien psychologique</p>
+          <h4>Elaboré par :</h4>
+          <ul>
+            <li>Mhamdi Ahlem</li>
+            <li>Zairi Rihem</li>
+          </ul>
+          <h4>Encadré par :</h4>
+          <ul>
+            <li>Mr Mohamed Bjaoui</li>
+            <li>Mr Ferid Helali</li>
+          </ul>
+          <h4>Jury :</h4>
+          <ul>
+            <li>Mr Tarek Jalled</li>
+            <li>Mr Hafedh Boukthir</li>
+          </ul>
+        </section>
+        <!-- Slide 2 Plan-->
+        <section>
+          <h3>Plan</h3>
+        </section>
+        <!-- Slide 3 Introduction-->
+        <section>
+          <h1>Introduction</h1>
+          <img src="images/introduction.png" id="intro" />
+        </section>
+
+        <!-- Slide 4  Introduction-->
+        <section>
+          <h3>Introduction</h3>
+          <img src="images/realisation.png" id="realisation" />
+          <img src="images/revolution.png" id="revolution" />
+          <img src="images/IA.png" id="IA" />
+          <img src="images/therapie.png" id="therapie" />
+        </section>
+
+        <!-- Slide 5 Cadre Generale: SCRUM-->
+
+        <section>
+          <h1>Cadre Général du Projet</h1>
+          <img src="images/introduction.png" id="intro" />
         </section>
 
         <section>
-          <h3>Le traitement du langage naturel</h3>
+          <h4>Contexte de projet</h4>
           <p>
-            est la capacité pour un programme informatique de comprendre le
-            langage humain tel qu'il est parlé.
+            Emily: est un agent conversationnel qui agir en tant que mentor ou
+            conseiller pour personnes curieux dans des nombreuses problèmes
+            psychologique
           </p>
-		     <h1 class="page">2</h1>
+        </section>
+        <section>
+          <section>
+            <h4>PROSSESUS DE GESTION DE PROJET</h4>
+            <p>
+              Scrum : est une méthodologie agile itérative et incrémentale. Il
+              repose sur un travail d'équipe et un suivi continu à travers des
+              réunions quotidiennes et périodiques.
+            </p>
+            <img src="images/po.png" id="po" />
+            <img src="images/sm.png" id="sm" />
+            <img src="images/st.png" id="st" />
+          </section>
+          <section><img src="images/scrum.jpg"width:"60%" /></section>
+        </section>
+        <!-- Slide 5 Cadre Generale:CRISP-DM-->
+
+        <section>
+          <section>
+            <p>
+              La méthode CRISP a été au départ développée par IBM dans les
+              années 60 pour réaliser les projets Datamining. Elle reste
+              aujourd’hui la seule méthode utilisable efficacement pour tous les
+              projets Data Science.
+            </p>
+            <h4 class="page">6</h4>
+          </section>
+          <section><img src="images/crips.png"width:"60%" /></section>
+        </section>
+        <!--
+        <section>
+		<h3>1.La compréhension du problème métier</h3>
+		<p>La première étape consiste à bien comprendre les éléments métiers et problématiques
+		 que la Data Science vise à résoudre ou à améliorer.</p>
+		  <h4 class="page">7</h4>
+		</section>
+
+		<section>
+		<h3>2.La compréhension des données</h3>
+		<p>Cette phase vise à déterminer précisément les donnée à analyser,
+		 à identifier la qualité des données disponibles et à faire le lien
+		  entre les données et leur signification d’un point de vue métier.</p>
+		   <h4 class="page">8</h4>
+		</section>
+		<section>
+		<h3>3.La construction du Data Hub</h3>
+		<p>Cette phase de préparation des données regroupe les activités liées à la construction
+		 de l’ensemble précis des données à analyser, faite à partir des données brutes.</p>
+		  <h4 class="page">9</h4>
+		</section>
+		<section>
+		<h3>4.La modélisation</h3>
+		<p>La modélisation comprend le choix, le paramétrage et le test de différents 
+		algorithmes ainsi que leur enchaînement, qui constitue un modèle. </p>
+		 <h4 class="page">10</h4>
+		</section>
+		<section>
+		<h3>5.L’évaluation</h3>
+		<p>L’évaluation vise à vérifier le(s) modèle(s) ou les connaissances obtenues afin 
+		de s’assurer qu’ils répondent aux objectifs formulés au début du processus.</p>
+		 <h4 class="page">11</h4>
+		</section>
+		<section>
+		<h3>6.Le déploiement</h3>
+		<p>Il s’agit de l’étape finale du processus.
+		 Elle consiste en une mise en production pour les utilisateurs finaux des modèles obtenus.</p>
+		 <h4 class="page">12</h4>
+		</section>-->
+        <!--Chapitre 2 : Planification Et Architecture-->
+        <section>
+          <h3>Chapitre 2 : Planification Et Architecture</h3>
+        </section>
+        <section>
+          <section>
+            <h3 class="titre">Le traitement du langage naturel</h3>
+            <p>
+              est la capacité pour un programme informatique de comprendre le
+              langage humain tel qu'il est parlé.
+            </p>
+            <h4 class="page">1</h4>
+          </section>
         </section>
 
         <section>
           <section>
-            <h3>Traitement du langage naturel</h3>
+            <h3>techniques de la PNL</h3>
             <h5>1.Tokenisation</h5>
             <pre>
 						<code>
@@ -66,9 +255,7 @@
 						</code>
 					</pre>
           </section>
-          <section>
-            <img src="images/token.png" />
-          </section>
+          <section><img src="images/token.png"width:"60%" /></section>
         </section>
         <section>
           <section>
@@ -78,42 +265,186 @@
 				  filtered_tokens = [w for w in intent if not w.is_stop]
                   print(filtered_tokens)
 				</code>
+			</pre>
+            <h4 class="page">3</h4>
+          </section>
+
+          <section><img src="images/stop.png"width:"60%" /></section>
+        </section>
+
+        <section>
+          <section>
+            <h5>3.Normalisation</h5>
+            <pre>
+				<code>
+				  words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
+                  words = sorted(list(set(words)))
+
+                  classes = sorted(list(set(classes)))
+
+                  print (len(documents), "documents")
+
+                  print (len(classes), "classes", classes)
+
+                  print (len(words), "unique lemmatized words", words)
+
+
+                  pickle.dump(words,open('words.pkl','wb'))
+                  pickle.dump(classes,open('classes.pkl','wb'))
+
+				</code>
 				</pre>
+            <h4 class="page">4</h4>
           </section>
-
-          <section>
-            <img src="images/motvide.png" />
-            <h1 class="page">3</h1>
-          </section>
+          <section><img src="images/lemma.png"width:"60%" /></section>
         </section>
 
         <section>
           <section>
-            <img
-            src="https://th.bing.com/th/id/R.63efb70e17b554c85a8c7882bd9cd9c8?rik=gg%2fghRxt%2bgPm8w&pid=ImgRaw&r=0"
-            width:"70%">
+            <h5>4.Vectorisation</h5>
+            <pre>
+				<code>
+				 filtered_w[1].vector
+				</code>
+				</pre>
+            <h4 class="page">5</h4>
+          </section>
+          <section><img src="images/vector.png"width:"60%" /></section>
+        </section>
+
+        <!--Apprentissage en profondeur-->
+        <section>
+          <h3>Apprentissage en profondeur</h3>
+          <p>
+            L'apprentissage profond est un type d'intelligence artificielle
+            dérivé du l'apprentissage automatique où la machine est capable
+            d'apprendre par elle-même.
+          </p>
+          <h4 class="page">2</h4>
+        </section>
+        <section>
+          <section>
+            <p>
+              Les réseaux de neurones :communément appelés des réseaux de
+              neurones artificiels sont des imitations simples des fonctions
+              d’un neurone dans le cerveau humain pour résoudre des
+              problématiques d’apprentissage de la machine
+            </p>
+          </section>
+          <section><img src="images/neurone.png"width:"60%" /></section>
+          <section><img src="images/equation.png"width:"60%" /></section>
+        </section>
+
+        <!--Chapitre 3: Solution Proposée-->
+        <section>
+          <h3>Chapitre 3: Solution Proposée</h3>
+        </section>
+        <section>
+          <h6>Architecture global</h6>
+          <img src="images/architecture.png" />
+        </section>
+        <section>
+          <section>
+            <h6>CHATBOT AVEC MODELE SEQUENTIEL</h6>
+            <p>
+              Un Séquentiel modèle est approprié pour une pile simple de couches
+              où chaque couche a exactement un tenseur d’entrée et un tenseur de
+              sortie
+            </p>
+            <img src="images/seq.jpeg" width="50%" height="50%" />
           </section>
           <section>
-            <h1>Machine Learning</h1>
-            <ul>
-              <li>Natural Language Processing</li>
-              <li>Natural Language Understanding</li>
-              <li>Natural Language Pattern Matching</li>
-            </ul>
+            <h4>Les étapes du modèle séquentie</h4>
+            <h6>etape 1: Charger les données</h6>
+            <pre>
+				<code>
+				  intents = json.loads(data_file)
+                  
+				  for intent in intents['intents']:
+                    for pattern in intent['patterns']:
+
+                     w = nltk.word_tokenize(pattern)
+                     words.extend(w)
+
+                     documents.append((w, intent['tag']))
+
+                     if intent['tag'] not in classes:
+                       classes.append(intent['tag'])
+				</code>
+			</pre>
+          </section>
+          <section>
+            <h6>etape 2: Definir le modele</h6>
+            <pre>
+				<code>
+				   model = Sequential()
+                   model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+                   model.add(Dropout(0.5))
+                   model.add(Dense(64, activation='relu'))
+                   model.add(Dropout(0.5))
+                   model.add(Dense(len(train_y[0]), activation='softmax'))
+				</code>
+			</pre>
+          </section>
+          <section>
+            <h6>etape 3:Compiler le modele</h6>
+            <pre>
+				<code>
+				   sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+                   model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+				</code>
+			</pre>
+          </section>
+
+          <section>
+            <h6>Taux d'apprentissage</h6>
+            <img Src="images/opt.png"width:"60%" />
+          </section>
+          <section>
+            <h6>Taux d'apprentissage</h6>
+            <img src="images/opt2.png"width:"60%" />
+          </section>
+
+          <section>
+            <h6>etape 4:Adapter le modèle</h6>
+            <pre>
+		<code>
+		history = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+
+		</code>
+		</pre>
           </section>
         </section>
 
         <section>
-          <pre>
-						<code>
-							import keras as kr
-
-							app=flask()
-
-						</code>
-					</pre>
+          <h3>Chapitre 4: Etude ET Réalisation</h3>
         </section>
-        <section>Slide 2</section>
+        <section>
+          <img src="images/use_case.png"width:"60%" />
+          <p>Diagramme de Cas d’utilisation Globale</p>
+        </section>
+        <section>
+          <img src="images/accuracy.png" id="accuracy" />
+          <img src="images/loss.png" id="loss" />
+        </section>
+        <section>
+          <img src="images/chat_emily.png" />
+        </section>
+        <section>
+          <h3>conclusion</h3>
+        </section>
+        <section>
+          <h6>Conclusion</h6>
+
+          <img src="images/bot.png" id="bot" />
+          <img src="images/coupe.png" id="coupe" />
+          <p id="titre_conc">Creation du chatbot</p>
+        </section>
+
+        <section>
+		 <h6 id="fin">Merci pour votre attention</h6>
+          <img src="images/tete.png" id="tete" />
+        </section>
       </div>
     </div>
 
